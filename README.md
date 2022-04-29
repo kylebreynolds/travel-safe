@@ -2,19 +2,20 @@
 
 ## Purpose
 As a traveler.
-I want to get more info about a country.
+I want to get updated COVID information about different countries.
 So I can book a safe vacation.
 
 ## Built With
 * HTML
 * CSS
-* *JavaScript
+* JavaScript
+Worldometers API
 
 ## Website
-
+https://kylebreynolds.github.io/travel-safe/
 
 ## Contribution
-
+Elilta Burka, Jacob Bauer, Kyle Reynolds
 
 ### 
 
