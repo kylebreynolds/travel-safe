@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travel Safe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-</head>
-<body>
-    <article class="message is-info">
-        <div class="message-header">
-          <p>Hello, Traveler Info</p>
-          <button class="delete" aria-label="delete"></button>
-        </div>
-        <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-        </div>
-      </article>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <div class="field is-grouped">
-        <p class="control is-expanded">
-          <input class="input" type="text" placeholder="where are you going?">
-        </p>
-        <p class="control">
-          <a class="button is-info">
-            Search
-          </a>
-          <ul></ul>
-        </p>
-      </div>
-</body>
+  <body>
+      <!--Hero Section -->
+     <section class="hero is-fullheight">
+
+     </section>
+     
+        <!--section-->
+        <section class="section">
+            <div class="container">
+                    <div class="column">
+                        <div class="notification is-info is-light" id="info">
+                            <button onClick="deleteBtn" class="delete" id="deleteBtn"></button>
+                            Primar lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="section"> <!--Can't center this section!!!!!!!!!!!!-->
+            <div class="container is-justify-content-center">
+                 <div class="field is-grouped is-grouped-centered" style="width: 400px" >
+                    <p class="control">
+                        <input class="input" type="text" placeholder="where are you going">
+                    </p>
+                    <p class="control">
+                        <button class="button is-info is-focused ">Search</button>
+                    </p>
+                </div>
+            </div>        
+        </section>
+        <section>
+            <div class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
+                <input class="input is-focused" type="text" placeholder="Input">
+              </div>
+        </section>
+        <script src="script.js"></script>
+     </body>
 </html>
