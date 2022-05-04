@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travel Safe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <body>
+
       <!--Hero Section -->
      <section class="hero is-fullheight">
 
      </section>
-     
+     <main>
         <!--section-->
         <section class="section">
             <div class="container">
                     <div class="column">
                         <div class="notification is-info is-light" id="info">
                             <button onClick="deleteBtn" class="delete" id="deleteBtn"></button>
-                            Primar lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                            Are you booking a vacation during a pandemic?  Search the destination country below to get the latest COVID information!
                         </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="container is-justify-content-center">
                  <div class="field is-grouped is-grouped-centered" style="width: 400px" >
                     <p class="control">
-                        <input class="input" type="text" placeholder="where are you going">
+                        <input name="input" id="country-input" class="input" type="text" placeholder="where are you going">
                     </p>
                     <p class="control">
                         <button class="button is-info is-focused ">Search</button>
@@ -40,9 +40,18 @@
         </section>
         <section>
             <div class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
-                <input class="input is-focused" type="text" placeholder="Input">
-              </div>
-        </section>
-        <script src="script.js"></script>
+                <h2 class="countrytitle">Covid Stats: <span id="country-search-term"></span></h2>
+                <div class="stats" id="stats">
+
+                
+                </div>
+            </div>
+            </section>
+        
+    
+    </main>
+        <script src="./assets/js/script.js"></script>
      </body>
 </html>
+     
+        
