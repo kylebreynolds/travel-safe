@@ -28,3 +28,9 @@ var button = document.querySelector(".button");
 
 button.addEventListener("click", getApi)
 
+
+// create span element to hold country name
+var titleEl = document.createElement("span");
+    titleEl.textContent = inputCountry;
+
+var countrySearched = document.querySelector("country-searched")
