@@ -1,6 +1,4 @@
-var countryInputEl = document.querySelector("#country-input");
-var countrySearchTerm = document.querySelector("country-searched");
-var countryContainerEl = document.querySelector("country-container");
+
 
 document.getElementById("deleteBtn").onclick = function() {
     document.getElementById("info").remove();
@@ -20,10 +18,16 @@ function getApi(){
         }
     };
     
-    fetch(`https://worldometers.p.rapidapi.com/api/coronavirus/country/${inputCountry}`, options)
-        .then(response => response.json())
-	    .then(response => console.log(response))
-	    .catch(err => console.error(err));
+    fetch(`https://worldometers.p.rapidapi.com/api/coronavirus/country/${inputCountry}`, options).then((data)=> {
+        return data.json();
+    }).then((data)=>{
+        console.log(data);
+        document.getElementById("stats").innerHTML=data;
+    })
+     
+    
+    
+        
        
 } 
 var button = document.querySelector(".button");
@@ -34,7 +38,19 @@ button.addEventListener("click", getApi)
 
 
 
-var display
+function displayStats(data) {
+    var stats = data;
+    var statsDiv = document.createElement("country-container")
+
+
+
+var countryName = stats;
+var titleEl = document.createElement("h1")
+titleEl.textContent = countryName;
+statsDiv.appendChild(titleEl);
+
+}
+
 
 // create span element to hold country name
 
