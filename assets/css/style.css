@@ -1,5 +1,5 @@
 .hero {
-    background: url("../image/image-hd.png");
+    background: url("../images/image-hd.png");
     background-position: center;
     background-size: cover;
     
@@ -13,5 +13,4 @@ main {
     display:flex;
     flex-direction: column;
     border: 3px solid red;
-
 }
