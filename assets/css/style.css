@@ -26,3 +26,9 @@ main {
     align-items: left
     ;
 }
+
+.stats {
+    background-color: white;
+    border: 3px solid rgb(74, 132, 239);
+    font-size: 1em;
+}
