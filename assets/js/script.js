@@ -1,3 +1,6 @@
+var countrySearched = document.querySelector("country-searched")
+
+
 document.getElementById("deleteBtn").onclick = function() {
     document.getElementById("info").remove();
 }
@@ -31,6 +34,5 @@ button.addEventListener("click", getApi)
 
 // create span element to hold country name
 var titleEl = document.createElement("span");
-    titleEl.textContent = inputCountry;
+    titleEl.textContent = countrySearched;
 
-var countrySearched = document.querySelector("country-searched")
