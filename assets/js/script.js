@@ -22,7 +22,7 @@ function getApi(){
         return data.json();
     }).then((data)=>{
         console.log(data);
-        document.getElementById("stats").innerHTML=data;
+        document.getElementById("stats").innerHTML= JSON.stringify(data);
     })
      
     
