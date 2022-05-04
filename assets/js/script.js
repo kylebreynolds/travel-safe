@@ -1,5 +1,6 @@
-var countrySearched = document.querySelector("country-searched")
-
+var countryInputEl = document.querySelector("#country-input");
+var countrySearchTerm = document.querySelector("country-searched");
+var countryContainerEl = document.querySelector("country-container");
 
 document.getElementById("deleteBtn").onclick = function() {
     document.getElementById("info").remove();
@@ -32,7 +33,19 @@ var button = document.querySelector(".button");
 button.addEventListener("click", getApi)
 
 
+
+var display
+
 // create span element to hold country name
-var titleEl = document.createElement("span");
-    titleEl.textContent = countrySearched;
+
+
+// append container with API number of cases
+
+
+
+//append container with API number of deaths
+
+
+
+// save country searched to local storage
 

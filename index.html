@@ -9,11 +9,12 @@
   </head>
 
   <body>
+
       <!--Hero Section -->
      <section class="hero is-fullheight">
 
      </section>
-     
+     <main>
         <!--section-->
         <section class="section">
             <div class="container">
@@ -30,7 +31,7 @@
             <div class="container is-justify-content-center">
                  <div class="field is-grouped is-grouped-centered" style="width: 400px" >
                     <p class="control">
-                        <input class="input" type="text" placeholder="where are you going">
+                        <input name="input" id="country-input" class="input" type="text" placeholder="where are you going">
                     </p>
                     <p class="control">
                         <button class="button is-info is-focused ">Search</button>
@@ -40,12 +41,16 @@
         </section>
         <section>
             <div class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
-                <input class="input is-focused" type="text" placeholder="Input">
-              </div>
-        </section>
+                <h2 class="">Country chosen: <span id="country-searched"></span></h2>
+                <div id="country-container">
 
-        <h2 class="">Country chosen: <span id="country-searched"></span></h2>
-
+                
+                </div>
+            </div>
+            </section>
+        
+    
+    </main>
         <script src="./assets/js/script.js"></script>
      </body>
 </html>
