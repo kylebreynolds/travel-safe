@@ -12,5 +12,17 @@ main {
     top: 100px;
     display:flex;
     flex-direction: column;
-    border: 3px solid red;
+    border: 3px solid rgb(74, 132, 239);
+}
+
+.countrytitle {
+    
+    text-align: left;
+    color: black;
+    font-size: 3em;
+}
+
+.input {
+    align-items: left
+    ;
 }
