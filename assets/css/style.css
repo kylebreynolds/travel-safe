@@ -1,0 +1,18 @@
+.hero {
+    background-image: url("../images/TREES.png");
+    height: 100vh;
+    background-position: center;
+   
+
+}
+
+main {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 100px;
+    display:flex;
+    flex-direction: column;
+    border: 3px solid red;
+
+}
