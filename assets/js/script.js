@@ -1,8 +1,6 @@
 
 
-document.getElementById("deleteBtn").onclick = function() {
-    document.getElementById("info").remove();
-}
+
 
 function getApi(){
     console.log("function ran")
