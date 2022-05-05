@@ -1,8 +1,6 @@
 
 
-document.getElementById("deleteBtn").onclick = function() {
-    document.getElementById("info").remove();
-}
+
 
 function getApi(){
     console.log("function ran")
@@ -21,15 +19,17 @@ function getApi(){
     fetch(`https://worldometers.p.rapidapi.com/api/coronavirus/country/${inputCountry}`, options).then((data)=> {
         return data.json();
     }).then((data)=>{
-        console.log(data);
-        document.getElementById("stats").innerHTML= JSON.stringify(data);
-    })
-     
-    
-    
+        console.log(data.data)
+        document.getElementById("country").innerHTML= JSON.stringify(data.data.Country);
+        document.getElementById("activeCases").innerHTML= JSON.stringify(data.data["Active Cases"]);
+        document.getElementById("newCases").innerHTML= JSON.stringify(data.data["New Cases"]);
+        document.getElementById("newDeaths").innerHTML= JSON.stringify(data.data["New Deaths"]);
+        document.getElementById("place").innerHTML= JSON.stringify(data.data.place);
         
-       
+        
+    })      
 } 
+
 var button = document.querySelector(".button");
 
 
@@ -38,18 +38,8 @@ button.addEventListener("click", getApi)
 
 
 
-function displayStats(data) {
-    var stats = data;
-    var statsDiv = document.createElement("country-container")
 
 
-
-var countryName = stats;
-var titleEl = document.createElement("h1")
-titleEl.textContent = countryName;
-statsDiv.appendChild(titleEl);
-
-}
 
 
 // create span element to hold country name
@@ -64,4 +54,13 @@ statsDiv.appendChild(titleEl);
 
 
 // save country searched to local storage
+
+function save(){
+    var dataToSave = document.getElementById("country-input").value;
+    localStorage.setItem("data", JSON.stringify(dataToSave));
+}
+
+button.addEventListener("click", save)
+
+// display local storage value
 

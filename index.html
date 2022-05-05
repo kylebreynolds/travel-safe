@@ -9,6 +9,9 @@
   </head>
 
   <body>
+      <header>
+          <h1>Travel-Safe</h1>
+      </header>
 
       <!--Hero Section -->
      <section class="hero is-fullheight">
@@ -20,28 +23,39 @@
             <div class="container">
                     <div class="column">
                         <div class="notification is-info is-light" id="info">
-                            <button onClick="deleteBtn" class="delete" id="deleteBtn"></button>
-                            Are you booking a vacation during a pandemic?  Search the destination country below to get the latest COVID information!
+                            <h2 >Are you booking a vacation during a pandemic?<br>  
+                                Search the destination country below to get the latest COVID information!
+                            </h2>
                         </div>
-                </div>
+                    </div>
             </div>
         </section>
         <section class="section"> <!--Can't center this section!!!!!!!!!!!!-->
             <div class="container is-justify-content-center">
-                 <div class="field is-grouped is-grouped-centered" style="width: 400px" >
+                
+                <div id="searchbar" style="width: 400px" >
+                    <h2 id="where">Where are you going?</h2>
                     <p class="control">
-                        <input name="input" id="country-input" class="input" type="text" placeholder="where are you going">
+                        <input name="input" id="country-input" class="input" type="text">
                     </p>
                     <p class="control">
-                        <button class="button is-info is-focused ">Search</button>
+                        <button id="searchbtn" class="button is-info is-focused ">Search</button>
                     </p>
+                    <p class="control">Recent Searches:<span id="recent"></span></p>
+                  
                 </div>
+                
             </div>        
         </section>
         <section>
-            <div class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
-                <h2 class="countrytitle">Covid Stats: <span id="country-search-term"></span></h2>
+            <div id="covidcontainer" class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
+                <h2 id="covidstats" class="countrytitle">Covid Stats: <span id="country-search-term"></span></h2>
                 <div class="stats" id="stats">
+                    <p>Country: <span id="country"></span></p>
+                    <p>Active Cases: <span id="activeCases"></span></p>
+                    <p>New Cases: <span id="newCases"></span></p>
+                    <p>New Deaths: <span id="newDeaths"></span></p>
+                    <p>Covid World Ranking: <span id="place"></span></p>
 
                 
                 </div>
