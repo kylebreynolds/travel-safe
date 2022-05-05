@@ -39,7 +39,7 @@
                         <input name="input" id="country-input" class="input" type="text">
                     </p>
                     <p class="control">
-                        <button class="button is-info is-focused ">Search</button>
+                        <button id="searchbtn" class="button is-info is-focused ">Search</button>
                     </p>
                 </div>
             </div>        
@@ -48,6 +48,11 @@
             <div id="covidcontainer" class="control" style="width: 700px"> <!--Can't center this section!!!!!!!!!!!-->
                 <h2 id="covidstats" class="countrytitle">Covid Stats: <span id="country-search-term"></span></h2>
                 <div class="stats" id="stats">
+                    <p>Country: <span id="country"></span></p>
+                    <p>Active Cases: <span id="activeCases"></span></p>
+                    <p>New Cases: <span id="newCases"></span></p>
+                    <p>New Deaths: <span id="newDeaths"></span></p>
+                    <p>Covid World Ranking: <span id="place"></span></p>
 
                 
                 </div>

@@ -19,10 +19,17 @@ function getApi(){
     fetch(`https://worldometers.p.rapidapi.com/api/coronavirus/country/${inputCountry}`, options).then((data)=> {
         return data.json();
     }).then((data)=>{
-        console.log(data);
-        document.getElementById("stats").innerHTML= JSON.stringify(data);
+        console.log(data.data)
+        document.getElementById("country").innerHTML= JSON.stringify(data.data.Country);
+        document.getElementById("activeCases").innerHTML= JSON.stringify(data.data["Active Cases"]);
+        document.getElementById("newCases").innerHTML= JSON.stringify(data.data["New Cases"]);
+        document.getElementById("newDeaths").innerHTML= JSON.stringify(data.data["New Deaths"]);
+        document.getElementById("place").innerHTML= JSON.stringify(data.data.place);
+        
+        
     })
      
+ 
     
     
         
@@ -62,4 +69,3 @@ statsDiv.appendChild(titleEl);
 
 
 // save country searched to local storage
-
