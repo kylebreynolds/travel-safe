@@ -62,8 +62,5 @@ function save(){
 
 button.addEventListener("click", save)
 
-function show(){
-    var dataToShow = localStorage.getItem("dataToSave");
-    document.getElementById("recent").value = dataToShow
+// display local storage value
 
-}

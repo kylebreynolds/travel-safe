@@ -59,6 +59,7 @@ h2 {
     background-color:rgb(74, 132, 239) ;
     padding: 3em;
     border-radius: 5px;
+ 
 }
 
 #covidstats {
@@ -89,4 +90,5 @@ h2 {
 .control {
     text-align: center;
     color: white;
+   
 }
