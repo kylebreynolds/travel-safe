@@ -27,14 +27,9 @@ function getApi(){
         document.getElementById("place").innerHTML= JSON.stringify(data.data.place);
         
         
-    })
-     
- 
-    
-    
-        
-       
+    })      
 } 
+
 var button = document.querySelector(".button");
 
 
@@ -43,18 +38,8 @@ button.addEventListener("click", getApi)
 
 
 
-function displayStats(data) {
-    var stats = data;
-    var statsDiv = document.createElement("country-container")
 
 
-
-var countryName = stats;
-var titleEl = document.createElement("h1")
-titleEl.textContent = countryName;
-statsDiv.appendChild(titleEl);
-
-}
 
 
 // create span element to hold country name
@@ -69,3 +54,16 @@ statsDiv.appendChild(titleEl);
 
 
 // save country searched to local storage
+
+function save(){
+    var dataToSave = document.getElementById("country-input").value;
+    localStorage.setItem("data", JSON.stringify(dataToSave));
+}
+
+button.addEventListener("click", save)
+
+function show(){
+    var dataToShow = localStorage.getItem("dataToSave");
+    document.getElementById("recent").value = dataToShow
+
+}

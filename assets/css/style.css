@@ -29,9 +29,10 @@ main {
 .stats {
     background-color: white;
     border: 3px solid rgb(74, 132, 239);
-    font-size: 1em;
+    font-size: 25px;
     border-radius: 5px;
     color: black;
+    text-align: center;
 }
 
 header {
@@ -83,4 +84,9 @@ h2 {
 #searchbtn {
     border: 1px solid white;
     
+}
+
+.control {
+    text-align: center;
+    color: white;
 }
